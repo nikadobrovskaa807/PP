@@ -1,0 +1,307 @@
+/* Главное окно (MainWindow) */
+QMainWindow, QDialog {
+    background-color: #F5F5DC; /* Светло-бежевый фон */
+}
+
+/* Окно авторизации (AuthWindow) */
+AuthWindow {
+    background-color: #F5F5DC; /* Светло-бежевый фон */
+}
+
+/* Сообщения об ошибках (QMessageBox) */
+QMessageBox {
+    background-color: #F5F5DC;
+    border: 1px solid #D2B48C;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+QMessageBox QLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    color: #5C4033;
+    background-color: transparent;
+}
+
+QMessageBox QPushButton {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #7A5A47;
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #4A3228;
+}
+
+/* Приветственный текст */
+#greetingLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 17pt;
+    font-weight: 300;
+    color: #5C4033;
+    background-color: transparent;
+    padding: 3px 0;
+    text-align: center;
+}
+
+/* Метка учетной записи */
+#accountLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    background-color: #5C4033;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#accountLabel:hover {
+    background-color: #7A5A47;
+    cursor: pointer;
+}
+
+#accountLabel:pressed {
+    background-color: #4A3228;
+}
+
+/* Метки для полей ввода */
+#inputLabel, QLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    color: #5C4033;
+    background-color: transparent;
+    padding: 5px 0;
+}
+
+/* Поля ввода */
+#inputField, QLineEdit, QSpinBox, QComboBox {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    background-color: #F5F5DC;
+    color: #5C4033;
+    border: 1px solid #D2B48C;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+#inputField:focus, QLineEdit:focus, QSpinBox:focus, QComboBox:focus {
+    border: 2px solid #5C4033;
+    background-color: #FFF5E6;
+}
+
+/* Кнопки */
+#loginButton, QPushButton {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    margin-top: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#loginButton:hover, QPushButton:hover {
+    background-color: #7A5A47;
+}
+
+#loginButton:pressed, QPushButton:pressed {
+    background-color: #4A3228;
+}
+
+/* Таблицы */
+QTableWidget {
+    background-color: #FFF5E6;
+    border: 1px solid #D2B48C;
+    gridline-color: #D2B48C;
+    font-family: "Times New Roman";
+    font-size: 12px;
+    /* background-color: #FFF5E6;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+/* Заголовки таблиц */
+QHeaderView::section {
+    background-color: #D2B48C;
+    color: #5C4033;
+    padding: 5px;
+    border: 1px solid #5C4033;
+    font-family: "Times New Roman";
+    font-size: 12px;
+}
+
+/* Стили для ячеек таблицы */
+QTableWidget::item {
+    padding: 5px;
+    color: #5C4033;
+}
+
+/* Вкладки */
+QTabWidget::pane {
+    border: 1px solid #D2B48C;
+    background-color: #F5F5DC;
+    border-radius: 5px;
+}
+
+/* Стили для редактора ячеек (QLineEdit, который появляется при редактировании) */
+QTableWidget QLineEdit {
+    min-width: 150px;  /* Минимальная ширина редактора */
+    min-height: 25px;  /* Минимальная высота редактора */
+    padding: 2px;      /* Внутренние отступы */
+    font-family: "Times New Roman";
+    font-size: 12px;   /* Размер шрифта */
+    color: #5C4033;    /* Цвет текста */
+    background-color: #FFFFFF; /* Цвет фона редактора */
+    border: 1px solid #D2B48C; /* Граница редактора */
+}
+
+QTabBar::tab {
+    background-color: #D2B48C;
+    color: #5C4033;
+    padding: 8px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+}
+
+QTabBar::tab:selected {
+    background-color: #FFF5E6;
+    color: #5C4033;
+    font-weight: bold;
+}
+
+QTabBar::tab:hover {
+    background-color: #E6D5B8;
+    color: #4A3228;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для выпадающего меню (отчеты и учетная запись) */
+QMenu {
+    background-color: #FFF5E6;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    color: #5C4033;
+}
+
+QMenu::item {
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #5C4033;
+}
+
+QMenu::item:selected {
+    background-color: #D2B48C;
+    color: #FFF5E6;
+}
+
+/* Боковая панель */
+QWidget#sidebarWidget {
+    background-color: #FFF5E6;
+    border-left: 5px solid #D2B48C;
+    padding: 10px;
+}
+
+/* Форма (SupplierForm, ProductForm, EmployeeForm) */
+QWidget#formWidget {
+    background-color: #FFF5E6;
+    border: 3px solid #5C4033;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок формы */
+QLabel#titleLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #5C4033;
+    background-color: transparent;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #D2B48C;
+}
+
+/* Форма деталей товара (ProductDetailsForm) */
+QWidget#detailsFormWidget {
+    background-color: #FFF5E6;
+    border: 3px solid #5C4033;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок формы деталей "Краткое описание" */
+QLabel#detailsFormTitleLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #5C4033;
+    background-color: transparent;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #D2B48C;
+    text-align: center;
+}
+
+/* Название категории товара */
+QLabel#detailsCategoryLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #5C4033;
+    background-color: transparent;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Метка "Описание" */
+QLabel#detailsLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    color: #5C4033;
+    background-color: transparent;
+    padding: 5px 0;
+}
+
+/* Текст описания */
+QLabel#detailsTextLabel {
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+    color: #5C4033;
+    background-color: #F5F5DC;
+    padding: 10px;
+    border: 1px solid #D2B48C;
+    border-radius: 5px;
+}
+
+QLineEdit[placeholderText] {
+    color: #7A5A47;
+}
